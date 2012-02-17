@@ -29,6 +29,7 @@ GEM
       activesupport (= 3.1.3)
     activesupport (3.1.3)
       multi_json (~> 1.0)
+    addressable (2.2.6)
     ansi (1.4.2)
     arel (2.2.1)
     builder (3.0.0)
@@ -42,6 +43,11 @@ GEM
     erubis (2.7.0)
     execjs (1.3.0)
       multi_json (~> 1.0)
+    faraday (0.7.5)
+      addressable (~> 2.2.6)
+      multipart-post (~> 1.1.3)
+      rack (>= 1.1.0, < 2)
+    hashie (1.2.0)
     hike (1.2.1)
     i18n (0.6.0)
     jquery-rails (1.0.19)
@@ -54,6 +60,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.17.2)
     multi_json (1.0.4)
+    multipart-post (1.1.4)
     pg (0.13.1)
     polyglot (0.3.3)
     rack (1.3.6)
@@ -104,15 +111,19 @@ GEM
     uglifier (1.2.3)
       execjs (>= 0.3.0)
       multi_json (>= 1.0.2)
+    yajl-ruby (1.1.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   coffee-rails (~> 3.1.1)
+  faraday
+  hashie
   jquery-rails
   pg
   rails (= 3.1.3)
   sass-rails (~> 3.1.5)
   turn (~> 0.8.3)
   uglifier (>= 1.0.3)
+  yajl-ruby
